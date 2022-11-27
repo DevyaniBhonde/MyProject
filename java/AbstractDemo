@@ -1,0 +1,30 @@
+
+abstract class Arithematic
+{
+    public int Addition(int iNo1,int iNo2)
+    {
+        return iNo1 + iNo2;
+    }
+    public abstract int Substraction(int iNo1,int iNo2);
+}
+class Marvellous extends Arithematic
+{
+    public int Substraction(int iNo1,int iNo2)
+    {
+        return iNo1 - iNo2;
+    }
+
+}
+public class AbstractDemo
+{
+    public static void main(String arr[])
+    {
+        Marvellous mobj = new Marvellous();
+        int Ret = 0;
+        Ret = mobj.Addition(11,10);
+        System.out.println("Addition is :"+Ret);
+        Ret  =mobj.Substraction(11, 10);
+        System.out.println("Substraction is :"+Ret);
+
+    }
+}
