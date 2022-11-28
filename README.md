@@ -1,1 +1,1 @@
-This is applications made by me
+This  applications are made by me
